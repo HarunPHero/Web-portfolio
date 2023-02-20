@@ -1,0 +1,8 @@
+.websiteText{
+  text-align: center;
+  background: linear-gradient(30deg, rgb(86, 197, 136),rgb(36, 222, 255)); 
+   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}

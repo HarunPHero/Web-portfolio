@@ -1,0 +1,35 @@
+.background{
+    background-image: linear-gradient(50deg,rgb(31, 212, 152), rgb(154, 255, 208), rgb(39, 161, 243),rgb(158, 208, 255));
+    background-size: 400%;
+    animation: animate 30s linear infinite;
+}
+.name{
+    background: linear-gradient(90deg, transparent, rgb(0, 91, 194));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
+}
+.hithere{
+    
+    color:transparent;
+    -webkit-text-stroke: 1px rgb(150, 85, 255);
+}
+.welcome{
+    background: linear-gradient(90deg, rgb(238, 234, 15), rgb(102, 91, 255));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0%
+    {
+        background-position: 0%;
+    }
+   100%
+    {
+       background-position: 400%;
+    }
+}
