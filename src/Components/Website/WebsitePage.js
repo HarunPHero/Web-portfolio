@@ -5,7 +5,7 @@ const WebsitePage = () => {
     const [website, setWebsite] = useState([])
     const id = useParams().id;
     useEffect(()=>{
-        fetch(`http://localhost:5000/websites/${id}`)
+        fetch(`https://portfolio-backend-qwot.onrender.com/websites/${id}`)
         .then(res => res.json())
         .then(data => setWebsite(data))
     },[])

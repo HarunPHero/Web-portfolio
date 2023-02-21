@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AllWebsites = () => {
   const [websites, setWebsites] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/websites/`)
+    fetch(`https://portfolio-backend-qwot.onrender.com/websites/`)
       .then((res) => res.json())
       .then((data) => {
         setWebsites(data);
