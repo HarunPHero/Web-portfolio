@@ -1,7 +1,15 @@
 .background{
-    background-image: linear-gradient(50deg,rgb(31, 212, 152), rgb(154, 255, 208), rgb(39, 161, 243),rgb(158, 208, 255));
-    background-size: 400%;
-    animation: animate 30s linear infinite;
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%,0 90%); */
+    /* clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%); */
+    /* background-image: linear-gradient(); */
+    /* background-image: linear-gradient(90deg, #00eeff, #71deff, #20ffcfbd, #6abcffd0, #36ffbce1, #0ee79fd5, #20b8ffd7);
+    background-size: 500% auto;
+    animation: animate 30s linear infinite; */
+    background-color:rgb(74, 198, 255);
+    background-image: url("https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_a775fc2518c0a6ca438299351b5d48a3faf59e7348ac4a6f5f88b3b68fd5a06a.png");
+    background-repeat: no-repeat;
+    background-position:bottom;
+    height: 50rem;
 }
 .name{
     background: linear-gradient(90deg, transparent, rgb(0, 91, 194));

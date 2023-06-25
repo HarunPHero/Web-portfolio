@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       mono: ['Rowdies',...defaultTheme.fontFamily.sans],
-      text:['Noto Serif', ...defaultTheme.fontFamily.sans]
+      text:['Anton', ...defaultTheme.fontFamily.sans]
     },
     extend: {},
   },

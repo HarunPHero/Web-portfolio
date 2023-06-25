@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
-
+import { useQuery } from "react-query";
 
 const Things = () => {
-  const [skills, setSkills] = useState([]);
-  useEffect(() => {
-    fetch(`https://portfolio-backend-qwot.onrender.com/skills`)
-      .then((res) => res.json())
-      .then((data) => setSkills(data));
-  }, []);
+  const { data: skills, refetch } = useQuery(["skills"], () =>
+    fetch(`https://portfolio-backend-qwot.onrender.com/skills`).then((res) =>
+      res.json()
+    )
+  );
+
+  refetch();
   return (
     <section className="things">
       <h1
@@ -22,8 +22,11 @@ const Things = () => {
       >
         Tools and Languages
       </h1>
-      <div data-aos="fade-up"
-      data-aos-duration="3000" className="lg:grid grid-cols-2 gap-3 md:grid grid-cols-2 gap-3  m-5">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="lg:grid grid-cols-2 gap-3 md:grid grid-cols-2 gap-3  m-5"
+      >
         {skills?.map((s) => (
           <div className="mt-5 flex ... bg-blue-100 max-w-sm p-2 rounded ...">
             <img className="w-16 mr-5" src={s?.img} alt="" />
